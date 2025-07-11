@@ -59,26 +59,14 @@
                 <center>
                 <div class="column right">
                     <div class="text">I'm Umair and I'm a <span class="typing-2"></span></div>
-                    <p>I can create beautiful websites according to your needs.Building state-of-the-art easy to use,user friendly websites annd applications is truely a passion of mine.i actively seek out new technology  and stay up-to-date on industry trends and advancement</p>
+                    <p>I can create beautiful websites/web application according to your needs.Building state-of-the-art easy to use,user friendly websites annd applications is truely a passion of mine.i actively seek out new technology  and stay up-to-date on industry trends and advancement</p>
                   
-                    <a href="cv_umair.pdf" download="umair_cv.pdf" id="down">Download CV<span id="spann"></span></a >
+                    <a href="umair_cv.pdf" download="umair_cv.pdf" id="down">Download CV<span id="spann"></span></a >
                 </div></center>
             </div>
         </div>
     </section>
-    <script>
-        let button=document.querySelector("#down");
-        button.addEventListener("click",()=>{
-            const span =document.querySelector("#spann");
-            span.style.visibility="visible";
-            setTimeout(()=>{
-                span.style.visibility="hidden";
-                button.style.transition=".3s ease-in-out";
-               
-            },3000);
-        })
-        </script>
-
+    
     <!-- services section start -->
     <!-- <section class="services" id="services">
         <div class="max-width">
@@ -158,14 +146,14 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>XML/JSON</span>
+                            <span>Python</span>
                             <span>60%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>MySQL</span>
+                            <span>SQLServer</span>
                             <span>70%</span>
                         </div>
                         <div class="line mysql"></div>
@@ -177,63 +165,162 @@
                         </div>
                         <div class="line js"></div>
                     </div>
+                      <div class="bars">
+                        <div class="info">
+                            <span>ASP.NET Core MVC</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+<section class="teams" id="teams">
+    <div class="max-width">
+        <h2 class="title">Projects</h2>
 
-    <!-- teams section start -->
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
+        <!-- Tabs -->
+        <div class="project-tabs">
+            <button class="tablink active" onclick="openTab(event, 'aspnet')">ASP.NET</button>
+            <button class="tablink" onclick="openTab(event, 'frontend')">Frontend</button>
+            <button class="tablink" onclick="openTab(event, 'basic')">Basic</button>
+        </div>
+
+        <!-- ASP.NET Projects -->
+        <div id="aspnet" class="tabcontent" style="display: block;">
+            <div class="carousel owl-carousel" id="aspnet-container">
+                <div class="card">
+                    <div class="box" onclick="window.open('projectsfile/AB Logistics.pdf', '_blank')">
+                        <img src="images/ABlogistics.png" alt="">
+                        <div class="text">AB Logistics</div>
+                        <p>Goods Delivery & Tracking system using ASP.NET</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box" onclick="window.open('projectsfile/Flower Shop.pdf', '_blank')">
+                        <img src="images/flowershop.png" alt="">
+                        <div class="text">Dashboard</div>
+                        <p>Flower bouquet ecommerce website built in ASP.NET</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="box" onclick="window.open('projectsfile/doctorAppointment(medcare).pdf', '_blank')">
+                        <img src="images/doctors.png" alt="">
+                        <div class="text">Medcare</div>
+                        <p>Doctor Appointment booking system built in ASP.NET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frontend Projects -->
+        <div id="frontend" class="tabcontent">
             <div class="carousel owl-carousel">
                 <div class="card" onclick="school()">
                     <div class="box">
                         <img src="images/home1.png" alt="">
                         <div class="text">School info</div>
-                        <p>Schoolinfo Website created my me</p>
+                        <p>School info Website</p>
                     </div>
                 </div>
                 <div class="card" onclick="Quiz()">
                     <div class="box">
                         <img src="images/Screenshot (32).png" alt="">
                         <div class="text">QuizWithU</div>
-                        <p>QuizWithU Website created my me</p>
+                        <p>Online Quiz Web App</p>
                     </div>
                 </div>
-                <div class="card" onclick="window.location.href='watch/index.html'">
+            </div>
+        </div>
+
+        <!-- Basic Projects -->
+        <div id="basic" class="tabcontent">
+            <div class="carousel owl-carousel">
+                <!-- <div class="card" onclick="Typing()">
+                    <div class="box">
+                        <img src="images/Screenshot (29).png" alt="">
+                        <div class="text">Typing Game</div>
+                        <p>Simple Typing Speed Game</p>
+                    </div>
+                </div> -->
+                    <div class="card" onclick="window.location.href='watch/index.html'">
                     <div class="box">
                         <img src="images/Screenshot (25).png" alt="">
                         <div class="text">CLock</div>
                         <p>Clock project created my me</p>
                     </div>
                 </div>
-     
                 <div class="card" onclick="calculator()">
                     <div class="box">
                         <img src="images/Screenshot (26).png" alt="">
                         <div class="text">Calculator</div>
-                        <p>Simple Calculator created my me</p>
+                        <p>Simple Calculator</p>
                     </div>
                 </div>
-                <div class="card" onclick="Typing()">
-                    <div class="box">
-                        <img src="images/Screenshot (29).png" alt="">
-                        <div class="text">Fast Typing Game</div>
-                        <p>SImple typing game created my me</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="max-width">
+                  
+                   
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Muhammad Umair</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Amna height building near Hascol petrol Pump<br> nishter road Karachi</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">muhammadumair2008b@aptechgdn.net<br>ui28212@gmail.com</div>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">0320-1395367</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="card" onclick="word1()">
-                    <div class="box">
-                        <img src="images/Screenshot (28).png" alt="">
-                        <div class="text">WORD GUESSING GAME</div>
-                        <p>Word guessing game created my me</p>
-                    </div>
-                </div> -->
-              
+           
             </div>
         </div>
     </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="#">Umair</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
 <script>
     function watch()
     {
@@ -256,72 +343,35 @@
     {
         window.open("https://rehan2008b.firebaseapp.com/");
     }
+
+
+   
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablink;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablink = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablink.length; i++) {
+            tablink[i].className = tablink[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+          let button=document.querySelector("#down");
+        button.addEventListener("click",()=>{
+            const span =document.querySelector("#spann");
+            span.style.visibility="visible";
+            setTimeout(()=>{
+                span.style.visibility="hidden";
+                button.style.transition=".3s ease-in-out";
+               
+            },3000);
+        })
+        
+
+ 
+
 </script>
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                   
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Muhammad Umair</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Amna height building near Hascol petrol Pump<br> nishter road Karachi</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">muhammadumair2008b@aptechgdn.net</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#" method="POST" class="contact-form">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required id="name">
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required id="email">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required id="subject">
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required id="message"></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit" >Send message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="#">Umair</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</body>
-</html>
